@@ -14,9 +14,6 @@ import { StyleSheet, SafeAreaView, Platform, StatusBar, View, Dimensions } from 
 
             <View style={{
               backgroundColor: "dodgerblue",
-              //flexBasis: 100, //width or height
-              //flexGrow: 1, // is equal to flex: 1
-              //flexShrink: 1, //is equal to flex: -1
               width: 100,
               height: 100,
             }}/>
@@ -24,6 +21,11 @@ import { StyleSheet, SafeAreaView, Platform, StatusBar, View, Dimensions } from 
               backgroundColor: "gold",
               width: 100,
               height: 100,
+              top: 20,
+              //bottom: 20,
+              left: 20,
+              //right: 20
+              position: 'absolute'
             }}/>
             <View style={{
               backgroundColor: "tomato",
