@@ -1,44 +1,27 @@
 import React from 'react';
-import { StyleSheet, SafeAreaView, Platform, StatusBar, View, Dimensions } from 'react-native';
+import { View } from 'react-native';
 
-        export default function App() {
+export default function App() {
 
-          return(
-            <View style={{
-              backgroundColor: "#fff",
-              flex: 1,
-              flexDirection: "row", //Horizontal
-              justifyContent: "center", //Main
-              alignItems: "center",
-            }}>
+  return(
+    <View style={{
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+    }}>
 
-            <View style={{
-              backgroundColor: "dodgerblue",
-              width: 100,
-              height: 100,
-            }}/>
-            <View style={{
-              backgroundColor: "gold",
-              width: 100,
-              height: 100,
-              top: 20,
-              //bottom: 20,
-              left: 20,
-              //right: 20
-              position: 'absolute'
-            }}/>
-            <View style={{
-              backgroundColor: "tomato",
-              width: 100,
-              height: 100,
-            }}/>
+      <View style={{
+        backgroundColor: "dodgerblue",
+        width: 100,
+        height: 100,
+        borderWidth: 10,
+        borderColor: "royalblue",
+        borderRadius: 50,
+        // borderTopWidth: 20,
+        // borderTopLeftRadius: 50,
 
-            </View>
-          );
-        };
+      }} />
 
-const styles = StyleSheet.create({
-  container: {
-    //paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-  },
-});
+    </View>
+  );
+}
