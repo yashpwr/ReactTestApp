@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import AppText from './app/components/AppText';
 
 export default function App() {
 
@@ -10,21 +11,7 @@ export default function App() {
       alignItems: "center",
     }}>
       
-      <Text style={{
-        fontSize: 30,
-        //fontFamily: "Courier",
-        fontFamily: "Roboto",
-        fontStyle: "italic",
-        fontWeight: "bold",
-        color: "tomato",
-        textTransform: "capitalize",
-        //textDecorationLine: "underline line-through",
-        textAlign: "center",
-        lineHeight: 40,
-
-
-
-      }} >I love React Native! This is my First React Native App!! Here some more Text</Text>
+    <AppText>I love React Native!</AppText>
 
     </View>
   );
