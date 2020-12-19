@@ -7,19 +7,29 @@ import { StyleSheet, SafeAreaView, Platform, StatusBar, View, Dimensions } from 
             <View style={{
               backgroundColor: "#fff",
               flex: 1,
+              flexDirection: "row", //Horizontal
+              justifyContent: "center", //Main
+              alignItems: "center"
             }}>
 
             <View style={{
               backgroundColor: "dodgerblue",
-              flex: 1,
+              width: 100,
+              height: 300,
+              alignSelf: "flex-start",
+              //flex: 1,
             }}/>
             <View style={{
               backgroundColor: "gold",
-              flex: 1,
+              width: 100,
+              height: 200,
+              //flex: 1,
             }}/>
             <View style={{
               backgroundColor: "tomato",
-              flex: 1,
+              width: 100,
+              height: 100,
+              //flex: 1,
             }}/>
 
             </View>
