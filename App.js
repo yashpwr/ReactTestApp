@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import AppText from './app/components/AppText';
+import { AntDesign } from '@expo/vector-icons';
 
 export default function App() {
 
@@ -11,7 +12,8 @@ export default function App() {
       alignItems: "center",
     }}>
       
-    <AppText>I love React Native!</AppText>
+      <AntDesign name="heart" size={24} color="black" />
+    <Text>I love React Native!</Text>
 
     </View>
   );
